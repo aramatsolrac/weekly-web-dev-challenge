@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box
+}
+
+:root {
+    --light: whitesmoke;
+    --darker: #000000;
+    --dark: #212529;
+    --grey: #343a40;
+    --light-grey: #495057;
+    --lighter-grey: #6c757d;
+    --highlight: #d8e2dc;
+    --green: #2d6a4f;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+    background: var(--highlight);
+}
+
+.header {
+    background-color: var(--light);
+    padding: 2em;
+    width: 100%;
+    display: flex;
+}
+
+.post-container {
+    padding: 1em 2em;
+}
+
+.post,
+button,
+img {
+    -webkit-box-shadow: 2px 2px 4px 0px var(--dark);
+    box-shadow: 2px 2px 4px 0px var(--grey);
+    border-radius: 5px;
+}
+
+.post {
+    background: var(--light);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr minmax(50px, 250px);
+    min-width: 400px;
+    max-width: 700px;
+    margin: 2em auto;
+}
+
+.post p {
+    color: var(--grey)
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    padding: 0 1em 0 0;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+}
+
+h1 {
+    color: var(--green);
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--green)
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    padding: 1em 2em;
+    font-weight: 700;
+    justify-self: start;
+    background-color: var(--green);
+    color: var(--light)
+}
+
+.toggle {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    margin-left: auto;
+    background-color: var(--highlight);
+}
+
+label {
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 1em;
+    background-color: var(--highlight);
+}
+
+label::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 2px;
+    left: 22px;
+    transition: .5s;
+    background-color: var(--light)
+}
+
+.toggle:checked+label::after {
+    transform: translate(-18px);
+    background-color: var(--darker)
+}
+
+.grey,
+.grey button,
+.grey img {
+    background-color: var(--dark);
+    -webkit-box-shadow: 2px 2px 4px 0px var(--lighter-grey);
+    box-shadow: 2px 2px 4px 0px var(--lighter-grey);
+}
+
+.dark,
+.dark>h1,
+.dark,
+.dark .toggle::after {
+    background-color: var(--darker);
+    color: var(--light);
+}
+
+.dark header {
+    background-color: var(--dark);
+}
+
+.dark h1,
+.dark h2,
+.dark p {
+    color: var(--light);
+}
+
+.dark button {
+    background-color: var(--light);
+    color: var(--darker);
+}
