@@ -10,4 +10,5 @@ This repository is a collection of the solutions I have submitted at [Scrimba](h
 |:-------------|---|---|---|
 | **Week 1:** Retro Screensaver | HTML, CSS, JS | [Code](https://github.com/aramatsolrac/weekly-web-dev-challenge/tree/main/week_1)|[Live](https://aramatsolrac.github.io/weekly-web-dev-challenge/week_1) |
 | **Week 2:** Dark & Light Theme | HTML, CSS, JS | [Code](https://github.com/aramatsolrac/weekly-web-dev-challenge/tree/main/week_2)|[Live](https://aramatsolrac.github.io/weekly-web-dev-challenge/week_2) |
+| **Week 2:** Space Button | HTML, CSS | [Code](https://github.com/aramatsolrac/weekly-web-dev-challenge/tree/main/week_3)|[Live](https://aramatsolrac.github.io/weekly-web-dev-challenge/week_3) |
 
