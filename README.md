@@ -1,4 +1,4 @@
-# weekly-web-dev-challenge
+# Weekly Web Dev Challenge
 A weekly coding challenge created by [Scrimba](https://scrimba.com/learn/weeklychallenge).
 
 # My Solutions
